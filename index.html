@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quran App V 0.1</title>
+      
+
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div class="Setting_Bar">
+            <select class="surahDd" id="dropDownSurah" onchange="surahNumber()">
+                <option id="d1" value="0">--إختر رقم السورة--</option>
+                <option value="0"> الفَاتِحَة </option>
+                <option value="1"> البَقَرَة </option>
+                <option value="2"> آل عِمرَان </option>
+                <option value="3"> النِّسَاء </option>
+                <option value="4"> المَائدة </option>
+                <option value="5"> الأنعَام </option>
+                <option value="6"> الأعرَاف </option>
+                <option value="7"> الأنفَال </option>
+                <option value="8"> التوبَة </option>
+                <option value="9"> يُونس </option>
+                <option value="10"> هُود </option>
+                <option value="11"> يُوسُف </option>
+                <option value="12"> الرَّعْد </option>
+                <option value="13"> إبراهِيم </option>
+                <option value="14"> الحِجْر </option>
+                <option value="15"> النَّحْل </option>
+                <option value="16"> الإسْرَاء </option>
+                <option value="17"> الكهْف </option>
+                <option value="18"> مَريَم </option>
+                <option value="19"> طه </option>
+                <option value="20"> الأنبيَاء </option>
+                <option value="21"> الحَج </option>
+                <option value="22"> المُؤمنون </option>
+                <option value="23"> النُّور </option>
+                <option value="24"> الفُرْقان </option>
+                <option value="25"> الشُّعَرَاء </option>
+                <option value="26"> النَّمْل </option>
+                <option value="27"> القَصَص </option>
+                <option value="28"> العَنكبوت </option>
+                <option value="29"> الرُّوم </option>
+                <option value="30"> لقمَان </option>
+                <option value="31"> السَّجدَة </option>
+                <option value="32"> الأحزَاب </option>
+                <option value="33"> سَبَأ </option>
+                <option value="34"> فَاطِر </option>
+                <option value="35"> يس </option>
+                <option value="36"> الصَّافات </option>
+                <option value="37"> ص </option>
+                <option value="38"> الزُّمَر </option>
+                <option value="39"> غَافِر </option>
+                <option value="40"> فُصِّلَتْ </option>
+                <option value="41"> الشُّورَى </option>
+                <option value="42"> الزُّخْرُف </option>
+                <option value="43"> الدخَان </option>
+                <option value="44"> الجَاثيَة </option>
+                <option value="45"> الأحْقاف </option>
+                <option value="46"> محَمَّد </option>
+                <option value="47"> الفَتْح </option>
+                <option value="48"> الحُجرَات </option>
+                <option value="49"> ق </option>
+                <option value="50"> الذَّاريَات </option>
+                <option value="51"> الطُّور </option>
+                <option value="52"> النَّجْم </option>
+                <option value="53"> القَمَر </option>
+                <option value="54"> الرَّحمن </option>
+                <option value="55"> الوَاقِعَة </option>
+                <option value="56"> الحَديد </option>
+                <option value="57"> المجَادلة </option>
+                <option value="58"> الحَشر </option>
+                <option value="59"> المُمتَحنَة </option>
+                <option value="60"> الصَّف </option>
+                <option value="61"> الجُمُعَة </option>
+                <option value="62"> المنَافِقون </option>
+                <option value="63"> التغَابُن </option>
+                <option value="64"> الطلَاق </option>
+                <option value="65"> التحْريم </option>
+                <option value="66"> المُلْك </option>
+                <option value="67"> القَلَم </option>
+                <option value="68"> الحَاقَّة </option>
+                <option value="69"> المعَارج </option>
+                <option value="70"> نُوح </option>
+                <option value="71"> الجِن </option>
+                <option value="72"> المُزَّمِّل </option>
+                <option value="73"> المُدَّثِّر </option>
+                <option value="74"> القِيَامَة </option>
+                <option value="75"> الإنسَان </option>
+                <option value="76"> المُرسَلات </option>
+                <option value="77"> النَّبَأ </option>
+                <option value="78"> النّازعَات </option>
+                <option value="79"> عَبَس </option>
+                <option value="80"> التَّكوير </option>
+                <option value="81"> الانفِطار </option>
+                <option value="82"> المطفِّفِين </option>
+                <option value="83"> الانْشِقَاق </option>
+                <option value="84"> البرُوج </option>
+                <option value="85"> الطَّارِق </option>
+                <option value="86"> الأَعْلى </option>
+                <option value="87"> الغَاشِية </option>
+                <option value="88"> الفَجْر </option>
+                <option value="89"> البَلَد </option>
+                <option value="90"> الشَّمْس </option>
+                <option value="91"> الليْل </option>
+                <option value="92"> الضُّحَى </option>
+                <option value="93"> الشَّرْح </option>
+                <option value="94"> التِّين </option>
+                <option value="95"> العَلَق </option>
+                <option value="96"> القَدْر </option>
+                <option value="97"> البَينَة </option>
+                <option value="98"> الزلزَلة </option>
+                <option value="99"> العَادِيات </option>
+                <option value="100"> القَارِعة </option>
+                <option value="101"> التَّكَاثر </option>
+                <option value="102"> العَصْر </option>
+                <option value="103"> الهُمَزَة </option>
+                <option value="104"> الفِيل </option>
+                <option value="105"> قُرَيْش </option>
+                <option value="106"> المَاعُون </option>
+                <option value="107"> الكَوْثَر </option>
+                <option value="108"> الكَافِرُون </option>
+                <option value="109"> النَّصر </option>
+                <option value="110"> المَسَد </option>
+                <option value="111"> الإخْلَاص </option>
+                <option value="112"> الفَلَق </option>
+                <option value="113"> النَّاس </option>
+            </select>  
+        
+            <select class="versDd" id="dropDownVers" onchange="versNumber()">
+                <option id="d1" value="0">--إختر رقم الآية--</option>
+
+            </select>  
+        </div>
+
+        <div class="SurahName">
+            سورة
+        </div>
+
+        <div id="Head"></div>
+        <div class="buttons">
+            <button class="nextbtn" onclick="nextVers()">الآية التالية</button>
+            <button class="prebtn" onclick="preVers()">الآية السابقة</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="verser.json"></script>
+    <script type="text/javascript" src="quran.json"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2fr 1fr;
+    min-height: 100vh;
+    align-items: center;  
+    justify-self: center;
+  }
+.Setting_Bar{
+    background-color: blue ;
+    grid-column: 2/3;  
+    
+}
+
+.SurahName{
+    grid-column: 2/3;
+}
+/* Dropdown styling */
+
+.versDd{
+    text-align: center;
+}
+
+.surahDd{
+    text-align: center; 
+}
+
+/* Head is the main area where Quran Verses is Displayed*/
+#Head {
+    grid-column: 1/4;
+    text-align: center;
+    padding: 40px 5px;
+    vertical-align: middle;
+    font-size:150%;   
+    background-color: yellow;
+    min-height: 0.5vh;
+    max-height: auto;
+}
+
+/* Buttons Styling */
+.prebtn{
+    text-align: center;
+    font-size:150%;   
+}
+
+.nextbtn{
+    text-align: center;
+    font-size:150%;   
+}
+
+.buttons{
+    padding: 1em;
+    grid-column: 2/3;    
+}
